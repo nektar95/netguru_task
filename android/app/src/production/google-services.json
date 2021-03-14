@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "974508020626",
+    "project_id": "netguru-task",
+    "storage_bucket": "netguru-task.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:974508020626:android:67db9695a5be8b4c24674b",
+        "android_client_info": {
+          "package_name": "com.task.netguru"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "974508020626-sirb293jktj6ouf2hoane9s2pf96qib8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqA9F6kpmd_6KFqObt5Dd14SS2xlMiPBA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "974508020626-sirb293jktj6ouf2hoane9s2pf96qib8.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "974508020626-9p28cf3mm4n57j1b8411prntocce4308.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.netguru.task"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
