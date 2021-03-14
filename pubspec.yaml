@@ -24,3 +24,29 @@ flutter:
   uses-material-design: true
   generate: true
 
+  fonts:
+    - family: SFProText
+      fonts:
+        - asset: assets/fonts/SFProText-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/SFProText-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/SFProText-Semibold.ttf
+          weight: 600
+    - family: Catamaran
+      fonts:
+        - asset: assets/fonts/Catamaran-Thin.ttf
+          weight: 100
+        - asset: assets/fonts/Catamaran-Light.ttf
+          weight: 300
+        - asset: assets/fonts/Catamaran-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Catamaran-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Catamaran-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Catamaran-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Catamaran-ExtraBold.ttf
+          weight: 800
+
