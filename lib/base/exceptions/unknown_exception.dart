@@ -1,0 +1,1 @@
+class UnknownErrorException implements Exception {}

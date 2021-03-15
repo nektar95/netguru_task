@@ -7,3 +7,7 @@ void setAppFlavor(Flavor flavor) {
 }
 
 Flavor getAppFlavor() => appFlavor;
+
+String getStorageValuesKey() {
+  return appFlavor == Flavor.dev ? 'values' : 'values_dev';
+}

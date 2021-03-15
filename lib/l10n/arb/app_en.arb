@@ -1,7 +1,7 @@
  {
     "@@locale": "en",
     "taskAppAddValue": "Add",
-    "@counterAppBarTitle": {
+    "@taskAppAddValue": {
         "description": "Button text to add new value"
     }
 }

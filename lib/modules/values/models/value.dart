@@ -2,7 +2,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'value.g.dart';
 
-@JsonSerializable(nullable: false)
+@JsonSerializable()
 class Value {
   Value(this.text, this.id, this.favorite);
 
