@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:netguru_task/home_page.dart';
+import 'package:netguru_task/di/bloc_providers.dart';
+import 'package:netguru_task/di/repository_providers.dart';
+import 'package:netguru_task/di/service_providers.dart';
+import 'package:netguru_task/modules/home/ui/home_page.dart';
 import 'package:netguru_task/utility/colors.dart';
 
 class App extends StatelessWidget {
@@ -9,7 +12,16 @@ class App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    return ServiceProviders(
+      child: RepositoryProviders(
+        child: BlocProviders(
+          child: buildApp(context),
+        ),
+      ),
+    );
+  }
 
+  MaterialApp buildApp(BuildContext context) {
     final _themeDataLight = ThemeData(
       primaryColor: AppColors.main,
       primaryColorLight: AppColors.mainLight,
