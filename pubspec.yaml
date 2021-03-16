@@ -30,6 +30,10 @@ flutter:
   uses-material-design: true
   generate: true
 
+  assets:
+    - assets/json/values.json
+
+
   fonts:
     - family: SFProText
       fonts:

@@ -11,7 +11,7 @@ class ValuesStorage {
     return storage.readSingleValue(values);
   }
 
-  Future<void> saveValuesRaw(String id) async {
-    await storage.writeToStorage(values, id);
+  Future<void> saveValuesRaw(String raw) async {
+    await storage.writeToStorage(values, raw);
   }
 }

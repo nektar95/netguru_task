@@ -1,5 +1,6 @@
 import 'package:equatable/equatable.dart';
 import 'package:meta/meta.dart';
+import 'package:netguru_task/base/models/error_code.dart';
 import 'package:netguru_task/modules/values/models/value.dart';
 
 @immutable
@@ -21,4 +22,11 @@ class HomeLoadedState extends HomeState {
   List<Object> get props => [values];
 }
 
-class HomeErrorState extends HomeState {}
+class HomeErrorState extends HomeState {
+  HomeErrorState(this.errorCode);
+
+  final ErrorCode errorCode;
+
+  @override
+  List<Object> get props => [errorCode];
+}

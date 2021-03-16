@@ -8,3 +8,12 @@ abstract class HomeEvent extends Equatable {
 }
 
 class GetValuesData extends HomeEvent {}
+
+class AddValueToFavorites extends HomeEvent {
+  AddValueToFavorites(this.id);
+
+  final int id;
+
+  @override
+  List<Object> get props => [id];
+}

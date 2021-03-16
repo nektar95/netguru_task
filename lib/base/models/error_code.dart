@@ -1,0 +1,4 @@
+enum ErrorCode {
+  unexpected,
+  storageError,
+}
