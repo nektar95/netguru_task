@@ -40,6 +40,11 @@ class ValuesRepository {
     }
   }
 
+  Future<List<Value>> getFavoritesValues() async {
+    final list = await getValues();
+    return list.where((element) => element.favorite).toList();
+  }
+
   Future<List<Value>> changeValue(int id) async {
     final list = await getValues();
     list.firstWhere((element) => element.id == id).favorite = true;
