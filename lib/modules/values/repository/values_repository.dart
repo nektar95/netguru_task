@@ -33,7 +33,6 @@ class ValuesRepository {
 
       cachedValues = result;
       return result;
-      // ignore: avoid_catches_without_on_clauses
     } catch (e, stackTrace) {
       await firebaseCrashlytics.recordError(e, stackTrace);
       throw StorageException();
@@ -52,11 +51,21 @@ class ValuesRepository {
     return list;
   }
 
+  Future<List<Value>> addNewValue(String text) async {
+    final list = await getValues();
+
+    final id = list.length + 1;
+
+    list.add(Value(text, id, false));
+
+    await saveValues(list);
+    return list;
+  }
+
   Future<void> saveValues(List<Value> list) async {
     try {
       cachedValues = list;
       await valuesStorage.saveValuesRaw(jsonEncode(list).toString());
-      // ignore: avoid_catches_without_on_clauses
     } catch (e, stackTrace) {
       await firebaseCrashlytics.recordError(e, stackTrace);
       throw StorageException();
