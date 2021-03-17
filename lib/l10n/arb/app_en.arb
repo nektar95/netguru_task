@@ -6,15 +6,15 @@
    },
    "taskAppAddValue": "Add",
    "@taskAppAddValue": {
-     "description": "Button text to add new value"
+     "description": "Label text to add new value"
    },
    "taskAppFavoritesValues": "Favorites",
    "@taskAppFavoritesValues": {
-     "description": "Button text to see favorites values"
+     "description": "Label text to see favorites values"
    },
    "taskAppHome": "Values",
    "@taskAppHome": {
-     "description": "Button text to home view"
+     "description": "Label text to home view"
    },
    "unknownException": "Unexpected error, sorry :(",
    "@unknownException": {
@@ -31,5 +31,21 @@
    "emptyFavoriteList": "It's empty here, don't you like anything?",
    "@emptyFavoriteList": {
      "description": "Empty favorites list"
+   },
+   "addNewValueInfo": "Write down your values. Do you have one?",
+   "@addNewValueInfo": {
+     "description": "Description of adding new value"
+   },
+   "addNewValueInputHint": "Type your value...",
+   "@addNewValueInputHint": {
+     "description": "Hint for new value input"
+   },
+   "addNewValueInputValidate": "Your value is too long! Max 250 characters.",
+   "@addNewValueInputValidate": {
+     "description": "Validation for add value input"
+   },
+   "addNewValueButton": "Add value",
+   "@addNewValueButton": {
+     "description": "Button text to add new value"
    }
  }
