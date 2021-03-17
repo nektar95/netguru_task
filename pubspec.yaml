@@ -16,6 +16,10 @@ dependencies:
   intl: ^0.16.1
   flutter_secure_storage: ^3.3.5
   convex_bottom_bar: ^2.7.1+2
+  shimmer: ^1.1.2
+  lottie: ^0.7.0+1
+  auto_size_text: ^2.1.0
+  fluttertoast: ^7.1.6
 
   json_serializable: ^3.5.1
   equatable: ^1.2.6
@@ -36,34 +40,27 @@ flutter:
 
 
   fonts:
-    - family: NotoSansJP
+    - family: Rubik
       fonts:
-        - asset: assets/fonts/NotoSansJP-Thin.otf
-          weight: 100
-        - asset: assets/fonts/NotoSansJP-Light.otf
+        - asset: assets/fonts/Rubik-Light.ttf
           weight: 300
-        - asset: assets/fonts/NotoSansJP-Regular.otf
+        - asset: assets/fonts/Rubik-Regular.ttf
           weight: 400
-        - asset: assets/fonts/NotoSansJP-Medium.otf
+        - asset: assets/fonts/Rubik-Medium.ttf
           weight: 500
-        - asset: assets/fonts/NotoSansJP-Bold.otf
+        - asset: assets/fonts/Rubik-Bold.ttf
           weight: 600
-        - asset: assets/fonts/NotoSansJP-Black.otf
+        - asset: assets/fonts/Rubik-Black.ttf
           weight: 700
-    - family: Catamaran
+    - family: Caveat
       fonts:
-        - asset: assets/fonts/Catamaran-Thin.ttf
-          weight: 100
-        - asset: assets/fonts/Catamaran-Light.ttf
-          weight: 300
-        - asset: assets/fonts/Catamaran-Regular.ttf
+        - asset: assets/fonts/Caveat-Regular.ttf
           weight: 400
-        - asset: assets/fonts/Catamaran-Medium.ttf
+        - asset: assets/fonts/Caveat-Medium.ttf
           weight: 500
-        - asset: assets/fonts/Catamaran-SemiBold.ttf
+        - asset: assets/fonts/Caveat-SemiBold.ttf
           weight: 600
-        - asset: assets/fonts/Catamaran-Bold.ttf
+        - asset: assets/fonts/Caveat-Bold.ttf
           weight: 700
-        - asset: assets/fonts/Catamaran-ExtraBold.ttf
-          weight: 800
+
 

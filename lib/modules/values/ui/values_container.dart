@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:netguru_task/modules/home/bloc/bloc.dart';
 import 'package:netguru_task/modules/values/models/value.dart';
+import 'package:netguru_task/modules/values/ui/value_text.dart';
 
 class ValuesContainer extends StatefulWidget {
   const ValuesContainer({Key key, this.values}) : super(key: key);
@@ -45,15 +46,10 @@ class _ValuesContainerState extends State<ValuesContainer> {
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        Center(
-            child: Text(
-          widget.values[index].text,
-          textAlign: TextAlign.center,
-          style: const TextStyle(
-              fontFamily: 'Catamaran',
-              fontWeight: FontWeight.w600,
-              fontSize: 36),
-        )),
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Center(child: ValueText(text: widget.values[index].text)),
+        ),
         Align(
           alignment: Alignment.bottomRight,
           child: Padding(

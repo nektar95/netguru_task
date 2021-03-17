@@ -16,10 +16,14 @@ class _HomeScreenState extends State<HomeScreen> {
     return DefaultTabController(
       length: 3,
       child: Scaffold(
+        backgroundColor: Theme.of(context).backgroundColor,
         appBar: AppBar(
           title: Text(
             AppLocalizations.of(context).taskHomePageTitle,
-            style: const TextStyle(fontSize: 24, fontWeight: FontWeight.w700),
+            style: TextStyle(
+                fontSize: 24,
+                color: Theme.of(context).backgroundColor,
+                fontWeight: FontWeight.w500),
           ),
           centerTitle: true,
         ),

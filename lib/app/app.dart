@@ -27,7 +27,8 @@ class App extends StatelessWidget {
       primaryColorLight: AppColors.mainLight,
       backgroundColor: AppColors.backgroundLight,
       accentColor: AppColors.textDark,
-      fontFamily: 'NotoSansJP',
+      shadowColor: AppColors.textDarkShadow,
+      fontFamily: 'Rubik',
     );
 
     final _themeDataDark = ThemeData(
@@ -35,7 +36,8 @@ class App extends StatelessWidget {
       primaryColorLight: AppColors.mainLight,
       backgroundColor: AppColors.backgroundDark,
       accentColor: AppColors.textLight,
-      fontFamily: 'NotoSansJP',
+      shadowColor: AppColors.textLightShadow,
+      fontFamily: 'Rubik',
     );
 
     return MaterialApp(
