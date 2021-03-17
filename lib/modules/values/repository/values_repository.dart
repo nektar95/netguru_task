@@ -46,7 +46,11 @@ class ValuesRepository {
 
   Future<List<Value>> changeValue(int id) async {
     final list = await getValues();
-    list.firstWhere((element) => element.id == id).favorite = true;
+    if (list.firstWhere((element) => element.id == id).favorite) {
+      list.firstWhere((element) => element.id == id).favorite = false;
+    } else {
+      list.firstWhere((element) => element.id == id).favorite = true;
+    }
     await saveValues(list);
     return list;
   }
@@ -73,6 +77,6 @@ class ValuesRepository {
   }
 
   Future<String> createValues() {
-    return rootBundle.loadString('json/values.json');
+    return rootBundle.loadString('assets/json/values.json');
   }
 }

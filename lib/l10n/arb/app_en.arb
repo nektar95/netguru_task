@@ -1,7 +1,19 @@
  {
-    "@@locale": "en",
-    "taskAppAddValue": "Add",
-    "@taskAppAddValue": {
-        "description": "Button text to add new value"
-    }
-}
+   "@@locale": "en",
+   "taskHomePageTitle": "Values viewer",
+   "@taskHomePageTitle": {
+     "description": "Appbar title for home"
+   },
+   "taskAppAddValue": "Add",
+   "@taskAppAddValue": {
+     "description": "Button text to add new value"
+   },
+   "taskAppFavoritesValues": "Favorites",
+   "@taskAppFavoritesValues": {
+     "description": "Button text to see favorites values"
+   },
+   "taskAppHome": "Values",
+   "@taskAppHome": {
+     "description": "Button text to home view"
+   }
+ }

@@ -1,4 +1,7 @@
 {
-    "@@locale": "pl",
-    "taskAppAddValue": "Dodaj"
+  "@@locale": "pl",
+  "taskAppAddValue": "Dodaj",
+  "taskAppFavoritesValues": "Ulubione",
+  "taskAppHome": "Cytaty",
+  "taskHomePageTitle": "Przegląd wartości"
 }

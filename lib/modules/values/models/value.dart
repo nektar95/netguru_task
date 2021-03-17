@@ -9,8 +9,8 @@ class Value extends Equatable {
 
   factory Value.fromJson(Map<String, dynamic> json) => _$ValueFromJson(json);
 
-  final int id;
-  final String text;
+  int id;
+  String text;
   bool favorite;
 
   Map<String, dynamic> toJson() => _$ValueToJson(this);
