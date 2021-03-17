@@ -15,5 +15,21 @@
    "taskAppHome": "Values",
    "@taskAppHome": {
      "description": "Button text to home view"
+   },
+   "unknownException": "Unexpected error, sorry :(",
+   "@unknownException": {
+     "description": "Unexpected exception"
+   },
+   "storageException": "We have some problems with data.",
+   "@storageException": {
+     "description": "Storage exception"
+   },
+   "savedValue": "We will keep your value safe in our storage! Promise!",
+   "@savedValue": {
+     "description": "Value saved to storage"
+   },
+   "emptyFavoriteList": "It's empty here, don't you like anything?",
+   "@emptyFavoriteList": {
+     "description": "Empty favorites list"
    }
  }

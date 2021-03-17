@@ -3,5 +3,9 @@
   "taskAppAddValue": "Dodaj",
   "taskAppFavoritesValues": "Ulubione",
   "taskAppHome": "Cytaty",
-  "taskHomePageTitle": "Przegląd wartości"
+  "taskHomePageTitle": "Przegląd wartości",
+  "unknownException": "Niespodziewany błąd, jest nam przykro :(",
+  "storageException": "Mamy pewien problem z danymi.",
+  "savedValue": "Będziemy trzymać twoją wartość w bezpiecznym miejscu! Obiecujemy!",
+  "emptyFavoriteList": "Tu jest pusto, nic ci się nie podoba?"
 }

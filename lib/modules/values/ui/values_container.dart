@@ -56,8 +56,8 @@ class _ValuesContainerState extends State<ValuesContainer> {
             padding: const EdgeInsets.all(16.0),
             child: FloatingActionButton(
                 child: widget.values[index].favorite
-                    ? Icon(Icons.favorite)
-                    : Icon(Icons.favorite_border),
+                    ? const Icon(Icons.favorite)
+                    : const Icon(Icons.favorite_border),
                 backgroundColor: widget.values[index].favorite
                     ? Theme.of(context).primaryColor
                     : Theme.of(context).primaryColorLight,

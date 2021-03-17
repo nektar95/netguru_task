@@ -36,6 +36,7 @@ flutter:
   generate: true
 
   assets:
+    - assets/lottie/
     - assets/json/values.json
 
 
