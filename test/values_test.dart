@@ -12,7 +12,7 @@ import 'package:netguru_task/modules/values/models/value.dart';
 import 'package:netguru_task/modules/values/repository/values_repository.dart';
 import 'package:netguru_task/modules/values/storage/values_storage.dart';
 
-import 'mocks/firebase_mocks.dart';
+import 'mocks/firebase_crashlytics.dart';
 import 'mocks/repositories.dart';
 import 'mocks/storages.dart';
 
