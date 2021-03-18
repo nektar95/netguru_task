@@ -24,41 +24,43 @@ class _AddValuePageState extends State<AddValuePage> {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        AddValueInfo(),
-        AddValueText(),
-        AddValueInput(),
-        BlocConsumer<AddValueBloc, AddValueState>(listener: (context, state) {
-          if (state is AddValueSavedState) {
-            setState(() {
-              showToast(AppLocalizations.of(context).savedValue, context);
-            });
-          } else if (state is AddValueErrorState) {
-            var message = AppLocalizations.of(context).unknownException;
+    return SingleChildScrollView(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          AddValueInfo(),
+          AddValueText(),
+          AddValueInput(),
+          BlocConsumer<AddValueBloc, AddValueState>(listener: (context, state) {
+            if (state is AddValueSavedState) {
+              setState(() {
+                showToast(AppLocalizations.of(context).savedValue, context);
+              });
+            } else if (state is AddValueErrorState) {
+              var message = AppLocalizations.of(context).unknownException;
 
-            switch (state.errorCode) {
-              case ErrorCode.unexpected:
-                message = AppLocalizations.of(context).unknownException;
-                break;
-              case ErrorCode.storageError:
-                message = AppLocalizations.of(context).storageException;
-                break;
+              switch (state.errorCode) {
+                case ErrorCode.unexpected:
+                  message = AppLocalizations.of(context).unknownException;
+                  break;
+                case ErrorCode.storageError:
+                  message = AppLocalizations.of(context).storageException;
+                  break;
+              }
+
+              setState(() {
+                showToast(message, context);
+              });
             }
-
-            setState(() {
-              showToast(message, context);
-            });
-          }
-        }, builder: (context, state) {
-          if (state is AddValueSavingState) {
-            return LoadingWidget();
-          }
-          return Container();
-        }),
-      ],
+          }, builder: (context, state) {
+            if (state is AddValueSavingState) {
+              return LoadingWidget();
+            }
+            return Container();
+          }),
+        ],
+      ),
     );
   }
 }

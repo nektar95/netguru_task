@@ -42,7 +42,11 @@
    },
    "addNewValueInputValidate": "Your value is too long! Max 250 characters.",
    "@addNewValueInputValidate": {
-     "description": "Validation for add value input"
+     "description": "Validation for add value input too long"
+   },
+   "addNewValueInputValidateShort": "Your value is too short! Keep it typing.",
+   "@addNewValueInputValidateShort": {
+     "description": "Validation for add value input too short"
    },
    "addNewValueButton": "Add value",
    "@addNewValueButton": {

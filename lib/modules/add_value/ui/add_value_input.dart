@@ -14,7 +14,7 @@ class AddValueInput extends StatelessWidget {
       key: _formKey,
       autovalidateMode: AutovalidateMode.always,
       child: Padding(
-        padding: const EdgeInsets.all(16.0),
+        padding: const EdgeInsets.fromLTRB(16.0, 0, 16.0, 32),
         child: Column(
           children: [
             TextFormField(
@@ -26,10 +26,16 @@ class AddValueInput extends StatelessWidget {
                   fontSize: 20),
               keyboardType: TextInputType.text,
               onFieldSubmitted: (_) {
-                BlocProvider.of<AddValueBloc>(context)
-                    .add(AddNewValue(valueController.value.text));
+                if (_formKey.currentState.validate()) {
+                  BlocProvider.of<AddValueBloc>(context)
+                      .add(AddNewValue(valueController.value.text));
+                }
               },
               validator: (value) {
+                if (value.length < 2) {
+                  return AppLocalizations.of(context)
+                      .addNewValueInputValidateShort;
+                }
                 if (value.length > 250) {
                   return AppLocalizations.of(context).addNewValueInputValidate;
                 }
@@ -61,8 +67,10 @@ class AddValueInput extends StatelessWidget {
                 AppLocalizations.of(context).addNewValueButton,
                 width: MediaQuery.of(context).size.width,
                 onPressed: () {
-                  BlocProvider.of<AddValueBloc>(context)
-                      .add(AddNewValue(valueController.value.text));
+                  if (_formKey.currentState.validate()) {
+                    BlocProvider.of<AddValueBloc>(context)
+                        .add(AddNewValue(valueController.value.text));
+                  }
                 },
               ),
             )

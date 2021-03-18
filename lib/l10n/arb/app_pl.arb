@@ -11,5 +11,6 @@
   "addNewValueInfo": "Zapisz swoję wartości. Czy masz jakąś?",
   "addNewValueInputHint": "Wpisz swoją wartość...",
   "addNewValueInputValidate": "Twoja wartość jest za długa! Maksymalnie 250 znaków.",
-  "addNewValueButton": "Dodaj wartość"
+  "addNewValueButton": "Dodaj wartość",
+  "addNewValueInputValidateShort": "Twoja wartość jest za krótka! Pisz dalej"
 }

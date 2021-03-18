@@ -166,6 +166,16 @@ void main() {
       expect(listEquals(values, listChanged), isTrue);
     });
 
+    test('Add value to favorites - remove value', () async {
+      const response =
+          '[{\"text\":\"Lorem ipsum\",\"id\":1,\"favorite\":true},{\"text\":\"Lorem ipsum dura lex sed lex\",\"id\":2,\"favorite\":false}]';
+
+      when(mockValuesStorage.getValuesRaw()).thenAnswer((_) async => response);
+
+      final values = await valuesRepository.changeValue(1);
+      expect(listEquals(values, list), isTrue);
+    });
+
     test('Add value to favorites - fail', () async {
       const response = 'broken json';
 

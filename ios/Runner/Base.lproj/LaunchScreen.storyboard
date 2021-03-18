@@ -15,20 +15,21 @@
                         <viewControllerLayoutGuide type="top" id="Ydg-fD-yQy"/>
                         <viewControllerLayoutGuide type="bottom" id="xbc-2k-c8Z"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                    <view key="view" autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="center" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash" translatesAutoresizingMaskIntoConstraints="NO" id="Fy8-Ax-Bya">
-                                <rect key="frame" x="20" y="44" width="388" height="848"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchImage" translatesAutoresizingMaskIntoConstraints="NO" id="Fy8-Ax-Bya">
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.75294117647058822" green="0.75294117647058822" blue="0.75294117647058822" alpha="1" colorSpace="calibratedRGB"/>
+                        <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
                         <constraints>
-                            <constraint firstItem="Fy8-Ax-Bya" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="7qQ-MF-Dtq"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Fy8-Ax-Bya" secondAttribute="trailing" id="96U-5y-AeH"/>
-                            <constraint firstItem="Fy8-Ax-Bya" firstAttribute="top" secondItem="Ydg-fD-yQy" secondAttribute="bottom" id="Rtf-YW-Dko"/>
-                            <constraint firstItem="xbc-2k-c8Z" firstAttribute="top" secondItem="Fy8-Ax-Bya" secondAttribute="bottom" id="eL0-aE-Roz"/>
+                            <constraint firstItem="Fy8-Ax-Bya" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="0g9-M9-fho"/>
+                            <constraint firstAttribute="bottom" secondItem="Fy8-Ax-Bya" secondAttribute="bottom" id="cIa-1w-cIi"/>
+                            <constraint firstAttribute="trailing" secondItem="Fy8-Ax-Bya" secondAttribute="trailing" id="h6p-Uu-Gjx"/>
+                            <constraint firstItem="Fy8-Ax-Bya" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="w61-9T-FaT"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -38,6 +39,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="splash" width="512" height="512"/>
+        <image name="LaunchImage" width="512" height="512"/>
     </resources>
 </document>
